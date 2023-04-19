@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  download_data:
+    cmd: python -m src.pipeline.download_data.downloading_data --output-dir data/download_data
+    deps:
+    - path: src/pipeline/download_data/downloading_data.py
+      md5: 8ffc789db9c17bc844423cab09c678ea
+      size: 321
+    outs:
+    - path: data/download_data
+      md5: f321e7dfab76f23e8648344b390f354e.dir
+      size: 4968
+      nfiles: 1
