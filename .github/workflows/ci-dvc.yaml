@@ -1,0 +1,21 @@
+name: CI DVC
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "./dvc_pipeline/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "./dvc_pipeline/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: VisiumCH/check-python-style@main
+        with:
+          python-version: "3.11"
