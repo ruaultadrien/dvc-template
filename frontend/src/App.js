@@ -3,7 +3,6 @@ import Grid from './components/Grid';
 import './App.css';
 import { Menu } from 'antd';
 import logo from './logo.svg';
-import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -11,11 +10,11 @@ function App() {
     <div className="App">
       <Menu mode="horizontal">
         <Menu.Item className='menu-item' key='logo'>
-          <Link to="visium.ch">
+          <a href="https://www.visium.ch">
             <img src={logo} className="App-logo" alt="logo" />
-          </Link>
+          </a>
         </Menu.Item>
-        <Menu.Item className='menu-item' key="home">Home</Menu.Item>
+        <Menu.Item className='menu-item' key="home">DAG</Menu.Item>
         <Menu.Item className='menu-item' key="about">About</Menu.Item>
         <Menu.Item className='menu-item' key="contact">Contact</Menu.Item>
       </Menu>

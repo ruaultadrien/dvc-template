@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 dvc = "*"
 typer = "*"
-sklearn = "*"
 scikit-learn = "*"
+pandas = "*"
 
 [dev-packages]
 visiumlint = "*"

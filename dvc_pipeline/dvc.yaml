@@ -1,7 +1,7 @@
 stages:
   download_data:
-    cmd: python -m flair_use_case.pipeline.download_data.downloading_data.py --output-dir data/download_data
+    cmd: python -m src.pipeline.download_data.downloading_data --output-dir data/download_data
     deps:
-      - flair_use_case/pipeline/download_data.py
+      - src/pipeline/download_data/downloading_data.py
     outs:
       - data/download_data
