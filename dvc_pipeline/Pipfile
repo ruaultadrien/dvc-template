@@ -8,6 +8,7 @@ dvc = "*"
 typer = "*"
 scikit-learn = "*"
 pandas = "*"
+pyarrow = "*"
 
 [dev-packages]
 visiumlint = "*"
